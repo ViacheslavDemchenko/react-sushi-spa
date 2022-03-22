@@ -78,6 +78,7 @@ const CartList = ({
                                 <th>Количество</th>
                                 <th>Цена</th>
                                 <th>Сумма</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>

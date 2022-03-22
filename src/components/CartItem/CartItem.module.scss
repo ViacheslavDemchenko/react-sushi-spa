@@ -47,6 +47,10 @@ th {
     @media (min-width: 1024px) {
         font-size: 1.8rem;
     }
+
+    &:last-of-type {
+        width: 2.5rem;
+    }
 }
 
 td {
