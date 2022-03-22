@@ -127,10 +127,8 @@ function App() {
         </Sticky>
       </div>
       <Routes>
-        <Route path="/" element={<Home
-          setThanksModalActive={setThanksModalActive} 
-          />} 
-        />
+        <Route path="/" element={<Home setThanksModalActive={setThanksModalActive} />} />
+        <Route path="/react-sushi-spa" element={<Home setThanksModalActive={setThanksModalActive} />} />
         <Route path="/about" element={<About />} />
         <Route path="/contacts" element={<Contacts setModalActive={setModalActive} />} />
         <Route 
