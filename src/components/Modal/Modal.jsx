@@ -3,8 +3,6 @@ import MaskedInput from 'react-text-mask'
 import { ModalThanks } from '../ModalThanks/ModalThanks';
 import { SvgGenerator } from '../../SvgGenerator/SvgGenerator';
 
-import { Overlay } from '../Overlay/Overlay';
-
 import s from './Modal.module.scss';
 
 import logo from '../../img/logo-black.svg';
@@ -77,6 +75,8 @@ const Modal = ({modalActive, setModalActive, modalThanksActive, setThanksModalAc
             case 'modal-phone':
                 setPhoneDirty(true)
                 break
+            default:
+                return null
         }
     }
 

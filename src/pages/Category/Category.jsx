@@ -18,7 +18,7 @@ const Category = ({getCategory, getItemById, category, addToBasket}) => {
             setCatalog(data[name]);
             getCategory(name);
         });
-    }, [name]);
+    }, [name, getCategory]);
 
     const incrementQuantity = (itemId) => {
         const newCatalog = catalog.map(el => {

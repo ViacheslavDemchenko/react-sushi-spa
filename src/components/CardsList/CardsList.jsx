@@ -22,7 +22,7 @@ const CardsList = ({filteredGoods = [], getItemById, category, incrementQuantity
                         />
                     ))}
                 </ul>
-                <a className="btn btn-back" onClick={() => navigate(-1)}>Назад</a>
+                <button className="btn btn-back" onClick={() => navigate(-1)}>Назад</button>
             </div>
         </section>
     );

@@ -1,5 +1,3 @@
-import s from './Overlay.module.scss';
-
 const Overlay = ({modalActive, modalThanksActive, cartActive}) => {
 
     return(

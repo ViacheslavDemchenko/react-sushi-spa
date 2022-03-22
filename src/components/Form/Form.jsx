@@ -48,6 +48,8 @@ const Form = ({setThanksModalActive}) => {
             case 'modal-phone':
                 setPhoneDirty(true)
                 break
+            default:
+                return null
         }
     }
 

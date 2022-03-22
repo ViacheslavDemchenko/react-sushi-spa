@@ -83,7 +83,7 @@ const Product = ({newId, category, addToBasket}) => {
                                 {getIngridients(ingridients)}
                             </ul>
                         </div>
-                        <a className="btn btn-back" onClick={() => navigate(-1)}>Назад</a>
+                        <button className="btn btn-back" onClick={() => navigate(-1)}>Назад</button>
                     </div>
                 </section>
             )}

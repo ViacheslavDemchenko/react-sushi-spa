@@ -3,7 +3,7 @@ import s from './Contacts.module.scss';
 import { YMap } from '../../components/YMap/YMap';
 import { Info } from '../../components/Info/Info';
 
-const Contacts = ({setModalActive={setModalActive}}) => {
+const Contacts = ({setModalActive}) => {
 
     return(
         <section className={s.contacts}>

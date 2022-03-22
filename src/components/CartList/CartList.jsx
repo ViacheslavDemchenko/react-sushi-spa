@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { SvgGenerator } from '../../SvgGenerator/SvgGenerator';
-import { Overlay } from '../Overlay/Overlay';
 import React from 'react';
 
 import { CartItem } from '../CartItem/CartItem';
@@ -28,6 +27,11 @@ const CartList = ({
         order.map(el => {
             itemSum = el.price * el.quantity;
             totalSum += itemSum;
+
+            return {
+                itemSum,
+                totalSum
+            }
         });
 
         return totalSum;
@@ -38,13 +42,13 @@ const CartList = ({
             let itemSum = 0;
         
             order.map(el => {
-                itemSum += el.quantity;
+                return itemSum += el.quantity;
             });
 
             return getTotalItems(itemSum);
         }
         totalItemsCount(order);
-    }, [order]);
+    }, [order, getTotalItems]);
 
     const cartHandler = () => {
         const cartSum = {
