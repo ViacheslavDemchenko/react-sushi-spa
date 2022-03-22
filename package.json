@@ -1,6 +1,6 @@
 {
   "name": "react-sushi-spa",
-  "home": "https://github.com/ViacheslavDemchenko/react-sushi-spa",
+  "homepage": "https://github.com/ViacheslavDemchenko/react-sushi-spa",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
