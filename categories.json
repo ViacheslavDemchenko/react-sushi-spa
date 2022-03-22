@@ -1,0 +1,32 @@
+{
+    "categories": [
+        {
+            "idCategory": 1,
+            "name": "sets",
+            "nameRu": "Сеты",
+            "description": "Сеты — большие наборы, которые дают возможность попробовать все и сразу, оценить вкус и своеобразие разных суши и роллов.",
+            "img": "https://api.sushishishki.com.ua/uploads/barber_29f0f2b5da.jpg"
+        },
+        {
+            "idCategory": 2,
+            "name": "hotRolls",
+            "nameRu": "Горячие роллы",
+            "description": "Горячие роллы — это обжаренные роллы в кляре. Кляр может быть из разной муки, например, из обычной пшеничной высшего сорта или из смеси разных видов муки.",
+            "img": "https://sun9-84.userapi.com/impg/c855636/v855636230/1b6d14/8Kf5MTwhrfw.jpg?size=604x403&quality=96&sign=b6f7f7755e51be1845d28486d128310e&type=album"
+        },
+        {
+            "idCategory": 3,
+            "name": "bakedRolls",
+            "nameRu": "Запечённые роллы",
+            "description": "Главное отличие горячих роллов от холодных и запеченных разновидностей – способ приготовления. Они подвергаются особой термической обработке.",
+            "img": "https://makimaniafoods.ru/wp-content/uploads/2019/08/unnamed-file-5.jpg"
+        },
+        {
+            "idCategory": 4,
+            "name": "gunkanSushi",
+            "nameRu": "Гунканы суши",
+            "description": "Гунканы – это разновидность суши, которые прозвали так за их внешний вид.  По своей сути, гунканы — это рис, обернутый водорослями нори, с различной начинкой.",
+            "img": "https://vkusno-dom.com/wp-content/uploads/2020/11/5-1024x878.jpg"
+        }
+    ]
+}
