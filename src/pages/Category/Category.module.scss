@@ -1,0 +1,29 @@
+@import '../../styles/fonts-mixins.scss';
+
+.searchForm {
+    width: 100%;
+    margin-bottom: 2rem;
+
+    @media (min-width: 1024px) {
+        margin: 0 0 2rem 6rem;
+    }
+
+    input {
+        @include RobotoMedium();
+        font-size: 1.8rem;
+        line-height: 1.2;
+        color: #000;
+        width: 25rem;
+        border: 0;
+        border-bottom: 0.1rem solid #000;
+        outline: 0;
+        padding: 1rem 0;
+
+        &::placeholder {
+            @include RobotoMedium();
+            font-size: 1.8rem;
+            line-height: 1.2;
+            color: rgba(#000, 0.5); 
+        }
+    }
+}

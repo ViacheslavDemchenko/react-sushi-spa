@@ -1,0 +1,22 @@
+@import '../../styles/fonts-mixins.scss';
+
+.address {
+    position: relative;
+    margin: 0 0 0.5rem 1.5rem;
+    @include RobotoBold();
+    font-size: 1.4rem;
+    line-height: 1.2;
+
+    @media (min-width: 768px) {
+        margin: 0 0 0 1.5rem;
+    }
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: -1.5rem; 
+        transform: translateY(-50%);
+        width: 1.2rem;
+        height: 1.4rem;
+    }
+}

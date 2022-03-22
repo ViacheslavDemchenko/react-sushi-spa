@@ -1,0 +1,32 @@
+@import '../../styles/fonts-mixins.scss';
+
+.page404 {
+    width: 100%;
+    min-height: calc(100vh - 33.6rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        @include LemonTuesday();
+        font-size: 15rem;
+        line-height: 1.2;
+        color: #1fba0a;
+
+        @media (min-width: 768px) {
+            font-size: 20rem;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: 25rem;
+        }
+
+        @media (min-width: 1440px) {
+            font-size: 30rem;
+        }
+    }
+}

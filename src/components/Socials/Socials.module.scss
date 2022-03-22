@@ -1,0 +1,20 @@
+.social {
+    display: flex;
+    margin: auto;
+
+    li:not(:last-of-type) {
+        margin-right: 1rem;
+    }
+
+    svg {
+        width: 4rem;
+        height: 4rem;
+        will-change: fill;
+        transition: fill 0.3s ease-out;
+
+        &:hover,
+        &:focus {
+            fill: #fd4f10;
+        }
+    }
+}

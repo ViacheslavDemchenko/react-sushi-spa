@@ -1,0 +1,28 @@
+.category {
+    width: 100%;
+
+    @media (min-width: 1024px) {
+        min-height: calc(100vh - 39.8rem);
+        padding-left: 6rem;
+    }
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (min-width: 560px) {
+        flex-direction: row;
+    }
+
+    @media (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 3rem;
+        margin-bottom: 5rem;
+    }
+}

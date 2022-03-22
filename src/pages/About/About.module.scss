@@ -1,0 +1,66 @@
+@import '../../styles/fonts-mixins.scss';
+
+.about {
+    margin: 2rem 0;
+
+    @media (min-width: 1024px) {
+        padding-left: 6rem;
+    }
+}
+
+.subtitle {
+    margin-bottom: 2rem;
+    @include RobotoBold();
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #32505a;
+
+    @media (min-width: 1024px) {
+        font-size: 2.2rem;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.text {
+    margin-bottom: 2rem;
+
+    @media (min-width: 1024px) {
+        width: 70%;
+        margin-bottom: 0;
+    }
+
+    p:not(:last-of-type) {
+        margin-bottom: 1.5rem;
+
+        @media (min-width: 1024px) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    p {
+        @include RobotoRegular();
+        font-size: 1.6rem;
+        line-height: 1.2; 
+    }
+}
+
+.img {
+    height: 35rem;
+    border-radius: 1rem;
+
+    @media (min-width: 1024px) {
+        margin-bottom: 3rem;
+        height: 47.8rem;
+    }
+}

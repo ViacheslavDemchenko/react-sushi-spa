@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  font-size: 62.5%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-size: 1.6rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'LemonTuesday',
+    sans-serif;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: url('./fonts/Roboto/Roboto-Thin.eot');
+  src: url('./fonts/Roboto/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/Roboto/Roboto-Thin.svg#Roboto-Thin') format('svg'),
+       url('./fonts/Roboto/Roboto-Thin.ttf') format('truetype'),
+       url('./fonts/Roboto/Roboto-Thin.woff') format('woff'),
+       url('./fonts/Roboto/Roboto-Thin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('./fonts/Roboto/Roboto-Regular.eot');
+  src: url('./fonts/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/Roboto/Roboto-Regular.svg#Roboto-Regular') format('svg'),
+       url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype'),
+       url('./fonts/Roboto/Roboto-Regular.woff') format('woff'),
+       url('./fonts/Roboto/Roboto-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('./fonts/Roboto/Roboto-Medium.eot');
+  src: url('./fonts/Roboto/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/Roboto/Roboto-Medium.svg#Roboto-Medium') format('svg'),
+       url('./fonts/Roboto/Roboto-Medium.ttf') format('truetype'),
+       url('./fonts/Roboto/Roboto-Medium.woff') format('woff'),
+       url('./fonts/Roboto/Roboto-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('./fonts/Roboto/Roboto-Bold.eot');
+  src: url('./fonts/Roboto/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/Roboto/Roboto-Bold.svg#Roboto-Bold') format('svg'),
+       url('./fonts/Roboto/Roboto-Bold.ttf') format('truetype'),
+       url('./fonts/Roboto/Roboto-Bold.woff') format('woff'),
+       url('./fonts/Roboto/Roboto-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LemonTuesday';
+  src: url('./fonts/LemonTuesday/LemonTuesday.eot');
+  src: url('./fonts/LemonTuesday/LemonTuesday.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/LemonTuesday/LemonTuesday.svg#LemonTuesday') format('svg'),
+       url('./fonts/LemonTuesday/LemonTuesday.ttf') format('truetype'),
+       url('./fonts/LemonTuesday/LemonTuesday.woff') format('woff'),
+       url('./fonts/LemonTuesday/LemonTuesday.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }

@@ -1,0 +1,195 @@
+@import '../../styles/fonts-mixins.scss';
+
+.product {
+    min-height: calc(100vh - 39.8rem);
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+
+    @media (min-width: 1024px) {
+        padding-left: 6rem;
+        margin-top: 5rem;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 2rem;
+
+        @media (min-width: 768px) {
+            width: 40%;
+            margin: 0 2rem 0 0;
+        }
+
+        @media (min-width: 1024px) {
+            width: 35%;
+            align-self: flex-start;
+        }
+    }
+}
+
+.productWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    img {
+        border-radius: 1rem;
+    }
+}
+
+.productInfo {
+
+    @media (min-width: 768px) {
+        width: 60%;
+    }
+
+    @media (min-width: 1024px) {
+        width: 65%;
+    }
+}
+
+.productDescription {
+    @include RobotoRegular();
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+.productData {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+    div {
+        @include RobotoMedium();
+        font-size: 1.6rem;
+        line-height: 1.2; 
+        
+        &:not(:last-of-type) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    span {
+        @include RobotoBold();
+        font-style: italic;
+        font-size: 1.6rem;
+        line-height: 1.2;
+
+        &:nth-of-type(even) {
+            @include RobotoRegular();
+        }
+    }
+}
+
+.productComposition {
+    width: 100%;
+    margin-top: 2rem;
+
+    @media (min-width: 1024px) {
+        margin-top: 5rem;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 2rem 0 3rem 0;
+        @include LemonTuesday();
+        font-size: 3.5rem;
+        line-height: 1.2;
+        color: #32505a;
+    }
+
+    ul { 
+        margin-bottom: 2rem;
+
+        @media (min-width: 768px) {
+            column-count: 2;
+        }
+        
+        li {
+            @include RobotoRegular();
+            font-size: 1.6rem;
+            line-height: 1.8;
+
+            span {
+                font-style: italic;
+            }
+        }
+    }
+}
+
+.productHandle {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 560px) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: auto;
+    }
+}
+
+.productPrice {
+    margin-bottom: 2rem;
+    @include RobotoBold();
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+
+    @media (min-width: 560px) {
+        margin-bottom: 0;
+    }
+}
+
+.productSup {
+    top: -1.3rem;
+    right: 0.5rem;
+    margin-bottom: 0.3rem;
+    margin-left: 0.6rem;
+    @include RobotoBold();
+    font-size: 1.6rem;
+}
+
+.productNumber {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 2rem;
+    @include RobotoRegular();
+    font-size: 1.4rem;
+    line-height: 1.2;
+
+    @media (min-width: 560px) {
+        margin-bottom: 0;
+    }
+}
+
+.productMinus,
+.productPlus {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1.7rem;
+    @include RobotoThin();
+    font-size: 3.5rem;
+    line-height: 1.2;
+    border: 0.1rem solid grey;
+    border-radius: 50%;
+}
+
+.productPlus {
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.8;
+}

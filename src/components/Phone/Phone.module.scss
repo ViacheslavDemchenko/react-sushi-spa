@@ -1,0 +1,44 @@
+@import '../../styles/fonts-mixins.scss';
+
+.phone {
+    position: relative;
+    margin: 0 0 0 1.5rem;
+    @include RobotoBold();
+    font-size: 1.8rem;
+    line-height: 1.2;
+
+    @media (min-width: 1024px) {
+        font-size: 2rem;
+    }
+
+    a {
+        color: #000;
+        will-change: color; 
+        
+        &:hover,
+        &:focus {
+            color: #1fba0a;
+            transition: color 0.3s ease-out;	
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: -1.5rem; 
+        transform: translateY(-50%);
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+}
+
+.time {
+    margin: 0 0 1rem 0;
+    @include RobotoMedium();
+    font-size: 1.4rem;
+    line-height: 1.2;
+
+    @media (min-width: 768px) {
+        margin: 0;
+    }
+}

@@ -1,0 +1,37 @@
+@import '../../styles/fonts-mixins.scss';
+
+.item {
+    width: calc(100% / 2);
+    max-width: 21.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0 3rem 0;
+
+    @media (min-width: 768px) {
+        width: calc(100% / 5);
+    }
+
+    img {
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: 1rem;
+
+        @media (min-width: 560px) {
+            width: 5.5rem;
+            height: 5.5rem;
+        }
+
+        @media (min-width: 768px) {
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+}
+
+.text {
+    text-align: center;
+    @include RobotoRegular();
+    font-size: 1.6rem;
+    line-height: 1.2;
+}

@@ -1,0 +1,23 @@
+@import '../../styles/fonts-mixins.scss';
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+
+    li {
+        &:not(:last-of-type) {
+            margin-right: 5rem;
+        }
+    }
+}
+
+.link {
+    position: relative;
+    display: block;;
+    @include LemonTuesday();
+    font-size: 4.4rem;
+    line-height: 1.2;
+    color: #32505a;
+}
