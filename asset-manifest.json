@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-sushi-spa/static/css/main.4c7f5074.css",
-    "main.js": "/react-sushi-spa/static/js/main.62575b2f.js",
+    "main.css": "/react-sushi-spa/static/css/main.83c5fe6f.css",
+    "main.js": "/react-sushi-spa/static/js/main.d9d44d17.js",
     "static/media/LemonTuesday.svg": "/react-sushi-spa/static/media/LemonTuesday.08282527f004c877ff85d3a2e048f6c2.svg",
     "static/media/Roboto-Bold.svg": "/react-sushi-spa/static/media/Roboto-Bold.3dff0ec94d617835a661d3b9cf187b05.svg",
     "static/media/Roboto-Medium.svg": "/react-sushi-spa/static/media/Roboto-Medium.eeacae2bb66a41ce3da97b981cda3a79.svg",
@@ -47,11 +47,11 @@
     "static/media/map.svg": "/react-sushi-spa/static/media/map.936d7099eb7a6d3749899724f3bf6be2.svg",
     "static/media/phone.svg": "/react-sushi-spa/static/media/phone.e53f80dba7e85a4ddece836f0343f241.svg",
     "static/media/arrow.svg": "/react-sushi-spa/static/media/arrow.c28da6e25135b7b7cac3.svg",
-    "main.4c7f5074.css.map": "/react-sushi-spa/static/css/main.4c7f5074.css.map",
-    "main.62575b2f.js.map": "/react-sushi-spa/static/js/main.62575b2f.js.map"
+    "main.83c5fe6f.css.map": "/react-sushi-spa/static/css/main.83c5fe6f.css.map",
+    "main.d9d44d17.js.map": "/react-sushi-spa/static/js/main.d9d44d17.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c7f5074.css",
-    "static/js/main.62575b2f.js"
+    "static/css/main.83c5fe6f.css",
+    "static/js/main.d9d44d17.js"
   ]
 }
