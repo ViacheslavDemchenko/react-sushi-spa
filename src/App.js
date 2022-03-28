@@ -114,10 +114,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home setThanksModalActive={setThanksModalActive} />} />
         <Route path="/react-sushi-spa" element={<Home setThanksModalActive={setThanksModalActive} />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contacts" element={<Contacts setModalActive={setModalActive} />} />
+        <Route path="/react-sushi-spa/about" element={<About />} />
+        <Route path="/react-sushi-spa/contacts" element={<Contacts setModalActive={setModalActive} />} />
         <Route 
-          path="/category/:name" 
+          path="/react-sushi-spa/category/:name" 
           element={
             <Category 
               getCategory={getCategory} 
@@ -128,7 +128,7 @@ function App() {
           } 
         />
         <Route 
-          path={`/${category}/product/:id`} 
+          path={`/react-sushi-spa/${category}/product/:id`} 
           element={
             <Product 
               newId={newId} 

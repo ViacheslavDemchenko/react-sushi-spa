@@ -14,7 +14,7 @@ const Header = ({setModalActive}) => {
             <div className="container">
                 <div className={s.top}>
                     <div className={s.logo}>
-                        <Link to='/'>
+                        <Link index to="/">
                             <img src={logo} width="182" height="82" alt="Логотип сервиса доставки суши Миюши" />
                         </Link>
                     </div>

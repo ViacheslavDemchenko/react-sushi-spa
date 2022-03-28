@@ -13,8 +13,8 @@ const MenuStick = ({alertName, closeAlert, setCartActive, itemsCart}) => {
                     <nav className="mainNav">
                         <ul className="navList">
                             <li><NavLink activeclassname="active" to="/">Главная</NavLink></li>
-                            <li><NavLink activeclassname="active" to="/about">О нас</NavLink></li>
-                            <li><NavLink activeclassname="active" to="/contacts">Контакты</NavLink></li>
+                            <li><NavLink activeclassname="active" to="/react-sushi-spa/about">О нас</NavLink></li>
+                            <li><NavLink activeclassname="active" to="/react-sushi-spa/contacts">Контакты</NavLink></li>
                             {alertName && <Alert name={alertName} closeAlert={closeAlert} />}
                         </ul>
                         <div className="cart" onClick={() => setCartActive(true)}>
