@@ -13,8 +13,8 @@ const Product = ({newId, category, addToBasket}) => {
 
     useEffect(() => {
         window.scrollTo(0, 0); // Скроллим страницу вверх при переходе на страницу Product
-        getProducts().then(data => {
-            setProduct(data[category][newId - 1])
+        getProducts(category).then(data => {
+            setProduct(data[newId - 1]);
         });
     }, [newId, category]);
 

@@ -14,8 +14,8 @@ const Category = ({getCategory, getItemById, category, addToBasket}) => {
     const [search, setSearch] = useState('');
 
     useEffect(() => {
-        getProducts().then(data => {
-            setCatalog(data[name]);
+        getProducts(name).then(data => {
+            setCatalog(data);
             getCategory(name);
         });
     }, [name, getCategory]);

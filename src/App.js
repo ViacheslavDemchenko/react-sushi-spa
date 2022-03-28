@@ -1,7 +1,6 @@
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
-import Sticky from 'react-sticky-el';
 
 import { Header } from './layout/Header/Header';
 import { Footer } from './layout/Footer/Footer';
@@ -13,10 +12,8 @@ import { Product } from './pages/Product/Product';
 import { CartList } from './components/CartList/CartList';
 import { Modal } from './components/Modal/Modal';
 import { Category } from './pages/Category/Category';
-import { Alert } from './components/Alert/Alert';
 import { Overlay } from './components/Overlay/Overlay';
-
-import { SvgGenerator } from './SvgGenerator/SvgGenerator';
+import { MenuStick } from './components/MenuStick/MenuStick';
 
 import './App.scss';
 
@@ -108,24 +105,12 @@ function App() {
   return (
     <div className="App container-fluid">
       <Header setModalActive={setModalActive} />
-      <div className="menu-stick">
-        <Sticky>
-          <div className="container">
-            <nav className="mainNav">
-              <ul className="navList">
-                <li><Link to="/">Главная</Link></li>
-                <li><Link to="/about">О нас</Link></li>
-                <li><Link to="/contacts">Контакты</Link></li>
-                {alertName && <Alert name={alertName} closeAlert={closeAlert} />}
-              </ul>
-              <div className="cart" onClick={() => setCartActive(true)}>
-                <SvgGenerator id='cart' />
-                <span className="cartItems">{itemsCart}</span>
-              </div>
-            </nav>
-          </div>
-        </Sticky>
-      </div>
+      <MenuStick 
+        alertName={alertName} 
+        closeAlert={closeAlert} 
+        setCartActive={setCartActive} 
+        itemsCart={itemsCart} 
+      />
       <Routes>
         <Route path="/" element={<Home setThanksModalActive={setThanksModalActive} />} />
         <Route path="/react-sushi-spa" element={<Home setThanksModalActive={setThanksModalActive} />} />
